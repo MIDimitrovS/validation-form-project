@@ -1,0 +1,22 @@
+.btn {
+  min-width: 100px;
+  min-height: 38px;
+  margin: 0 auto;
+  background-color: rgba(152, 65, 65, 0.842);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.disabled {
+  min-width: 100px;
+  min-height: 38px;
+  margin: 0 auto;
+  background-color: rgba(158, 114, 114, 0.842);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-top: 30px;
+}

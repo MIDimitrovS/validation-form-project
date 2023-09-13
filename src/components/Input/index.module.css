@@ -1,0 +1,19 @@
+.formControl {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.label {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    text-align: left;
+    margin-bottom: 2%;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2%;
+    min-width: 500px;
+}
