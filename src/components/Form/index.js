@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
 import validator from "validator";
 import { addUser } from "../../ReduxStore/actions/addUsers";
 import Input from "../Input";
 import Button from "../Button";
 import styles from "./index.module.css";
 
-const Form = () => {
+const Form = ({ dispatch }) => {
   const [properties, setProperties] = useState({
     firstName: "",
     lastName: "",
@@ -14,7 +13,6 @@ const Form = () => {
     message: "",
   });
   const [isDisabled, setIsDisabled] = useState(true);
-  const dispatch = useDispatch();
   const handleSubmit = async (event) => {
     event.preventDefault();
     dispatch(addUser(properties));
@@ -35,7 +33,7 @@ const Form = () => {
     <form className={styles.form} onSubmit={handleSubmit}>
       <Input
         type="text"
-        id="first"
+        id="firstName"
         name="firstName"
         placeHolder="First Name"
         label="First Name"
@@ -46,7 +44,7 @@ const Form = () => {
       />
       <Input
         type="text"
-        id="last"
+        id="lastName"
         name="lastName"
         placeHolder="Last Name"
         label="Last Name"

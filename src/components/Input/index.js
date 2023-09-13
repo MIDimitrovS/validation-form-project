@@ -14,7 +14,7 @@ const Input = ({
     return (
         <div className={styles.container}>
             <label className={styles.label} htmlFor={id}>
-                {label}:
+                {`${label}:`}
             </label>
             <input
                 type={type}

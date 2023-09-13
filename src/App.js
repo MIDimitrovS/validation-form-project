@@ -1,8 +1,7 @@
 import React from "react";
 import { Provider } from "react-redux";
 import store from "./ReduxStore/store";
-import Form from "./components/Form";
-import Table from "./components/Table";
+import Main from "./components/Main";
 import "./App.css";
 
 function App() {
@@ -10,8 +9,7 @@ function App() {
     <Provider store={store}>
       <div className="App">
         <header className="App-header">
-          <Form />
-          <Table />
+          <Main />
         </header>
       </div>
     </Provider>
